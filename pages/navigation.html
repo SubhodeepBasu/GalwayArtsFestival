@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="96x96" href="../ressources/images/Favicon-96x96.png">
+    <title>Navigation</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../ressources/images/navigation/Background.jpg">
+            <div class="pictureCaption">Navigation</div>
+        </div>
+    </header>
+    <headerTransparent>
+        <div class="logo">
+            <a href="../index.html"><img src="../ressources/images/logo.png" /></a>
+        </div>
+        <div class="logoText">
+            <h1>Galway Arts Festival<h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <div class="dropdown">
+                    <li><a class="currentPosition">ABOUT</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/about.html">About</a>
+                        <a href="../pages/navigation.html">Navigation</a>
+                        <a href="../pages/volunteer.html">Volunteer</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>LINEUP</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/lineup.html">LINEUP</a>
+                        <a href="../pages/artists.html">Artists</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>ARTS</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/whatsInForMe.html">What's in<br />for me?</a>
+                        <a href="../pages/music.html">Music</a>
+                        <a href="../pages/visualArts.html">Visual Arts</a>
+                        <a href="../pages/theatre.html">Theatre</a>
+                        <a href="../pages/movies.html">Movies</a>
+                        <a href="../pages/rareArts.html">Rare Arts</a>
+                        <a href="../pages/comedy.html">Comedy</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>EXPLORE</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/foodDrinks.html">Food &<br />Drinks</a>
+                        <a href="../pages/placesActivities.html">Places &<br />Activities</a>
+                        <a href="../pages/Accommodation.html">Accommodation</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </headerTransparent>
+    <h1 class="headerAbout">&mdash;How to get here&mdash;</h1>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            // The location of Uluru
+            var location = {
+                lat: 53.284224599999995,
+                lng: -9.0656377
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 8,
+                    center: location
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB02rr_qTdIj53XjRDIOR-o-FmHlqNf1dA&callback=initMap">
+    </script>
+    </script>
+    <h1 class="headerAbout">&mdash;Travelling by Car&mdash;</h1>
+    <p class="textAbout">Coming from the North (Donegal and Sligo): use the N17<br />Coming from the East (Dublin): use the M6<br />Coming from the South (Limerick, Cork and Shannon): use the N18</p>
+
+    <h1 class="headerAbout">&mdash;Travelling by Public Transportation&mdash;</h1>
+    <h1 class="Subheading">&mdash;Train&mdash;</h1>
+    <p class="textAbout">The train station is at Eyre Square. The city is less than three hours away from Dublin and very well serviced by rail. Find out more <a class="redLink" href="http://www.irishrail.ie/home/">here</a>.</p>
+    <h1 class="Subheading">&mdash;Buses&mdash;</h1>
+    <p class="textAbout">You can come to Galway with our <a class="redLink" href="http://www.buseireann.ie/">public bus service</a>, or with one of the private bus services like <a class="redLink" href="https://www.citylink.ie/">CityLink</a>.</p>
+    <h1 class="Subheading">&mdash;Galway City Transport&mdash;</h1>
+    <p class="textAbout">To get around the city, we recommend to take the <a class="redLink" href="http://www.buseireann.ie/inner.php?id=459">bus</a> or a <a class="redLink" href="https://ie.mytaxi.com/welcome">taxi</a>.</p>
+
+    <h1 class="headerAbout">&mdash;Travelling by Air&mdash;</h1>
+    <p class="textAbout">Ireland West Airport Knock and Shannon Airport are both a one hour's and Dublin International Airport  more than a two hour's drive away from Galway. To get to Galway, choose the bus, train or hire a car.</p>
+    <footer>
+        <div class="footerLeft">
+            <ul>
+                <li>Galway Arts Festival Administration Office</li>
+                <li>Black Box Theatre, Dyke Road, Galway, Ireland</li>
+            </ul>
+        </div>
+        <div class="footerMiddle">
+            <p>Supporters</p>
+            <div class="footerMiddleGrid">
+                <a href="http://www.nuigalway.ie/" id="supportNUI"><img src="../ressources/images/Footer/SupportNUI.jpg"></a>
+                <a href="http://www.nuigalway.ie/commerce/" id="supportCairnes"><img src="../ressources/images/Footer/SupportCairnes.PNG"></a>
+                <a href="https://www.guinness.com/" id="supportGuinness"><img src="../ressources/images/Footer/SupportGuinness.jpg"></a>
+            </div>
+        </div>
+        <div class="footerRight">
+            <a href="https://www.facebook.com/" id="logoFB"><img src="../ressources/images/Footer/SocialMediaFacebook.png"></a>
+            <a href="https://twitter.com/" id="logoTwitter"><img src="../ressources/images/Footer/SocialMediaTwitter.png"></a>
+            <a href="https://www.youtube.com/" id="logoYT"><img src="../ressources/images/Footer/SocialMediaYoutube.png"></a>
+        </div>
+    </footer>
+</body>
+</html>

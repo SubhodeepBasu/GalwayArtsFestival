@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="96x96" href="../ressources/images/Favicon-96x96.png">
+    <title>Volunteer</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../ressources/images/volunteer/Background.jpg">
+            <div class="pictureCaption">Volunteer</div>
+        </div>
+    </header>
+    <headerTransparent>
+        <div class="logo">
+            <a href="../index.html"><img src="../ressources/images/logo.png" /></a>
+        </div>
+        <div class="logoText">
+            <h1>Galway Arts Festival<h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <div class="dropdown">
+                    <li><a class="currentPosition">ABOUT</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/about.html">About</a>
+                        <a href="../pages/navigation.html">Navigation</a>
+                        <a href="../pages/volunteer.html">Volunteer</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>LINEUP</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/lineup.html">LINEUP</a>
+                        <a href="../pages/artists.html">Artists</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>ARTS</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/whatsInForMe.html">What's in<br />for me?</a>
+                        <a href="../pages/music.html">Music</a>
+                        <a href="../pages/visualArts.html">Visual Arts</a>
+                        <a href="../pages/theatre.html">Theatre</a>
+                        <a href="../pages/movies.html">Movies</a>
+                        <a href="../pages/rareArts.html">Rare Arts</a>
+                        <a href="../pages/comedy.html">Comedy</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>EXPLORE</a></li>
+                    <div class="dropdown-content">
+                        <a href="../pages/foodDrinks.html">Food &<br />Drinks</a>
+                        <a href="../pages/placesActivities.html">Places &<br />Activities</a>
+                        <a href="../pages/Accommodation.html">Accommodation</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </headerTransparent>
+    <h1 style="text-align: center;">We need YOU to help make our festival happen!</h1>
+    <h3>Why volunteer?</h3>
+    <div class="textMiddle">
+        <p>Helping and volunteering is proven to make you happy! You can help us to make the festival happen and thereby bless all our festival visitors. And of course, you will also benefit from volunteering as it looks very good on your CV.</p>
+    </div>
+    <h3>Who can become a volunteer?</h3>
+    <div class="textMiddle">
+        <p>Everybody can volunteer! Every age, gender and background is welcome. We have various tasks so we hail every skill set and helping hand. Just enter your name and mail address to sign up as a volunteer.</p>
+    </div>
+    <h3 style="background: #800000; color: white;">Sign up for Participation</h3>
+    <form class="popUpForm" action="JavaScript:popUp()" method="post">
+        <label for="first">first name</label><br>
+        <input type="text" name="first" value=""><br>
+        <label for="last">last name</label><br>
+        <input type="text" name="last" value=""><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" value=""><br>
+        <input id="sub" type="submit" name="" value="submit">
+        <span class="popUpText" id="popUp">Thank you for registration!</span>
+    </form>
+    <footer>
+        <div class="footerLeft">
+            <ul>
+                <li>Galway Arts Festival Administration Office</li>
+                <li>Black Box Theatre, Dyke Road, Galway, Ireland</li>
+            </ul>
+        </div>
+        <div class="footerMiddle">
+            <p>Supporters</p>
+            <div class="footerMiddleGrid">
+                <a href="http://www.nuigalway.ie/" id="supportNUI"><img src="../ressources/images/Footer/SupportNUI.jpg"></a>
+                <a href="http://www.nuigalway.ie/commerce/" id="supportCairnes"><img src="../ressources/images/Footer/SupportCairnes.PNG"></a>
+                <a href="https://www.guinness.com/" id="supportGuinness"><img src="../ressources/images/Footer/SupportGuinness.jpg"></a>
+            </div>
+        </div>
+        <div class="footerRight">
+            <a href="https://www.facebook.com/" id="logoFB"><img src="../ressources/images/Footer/SocialMediaFacebook.png"></a>
+            <a href="https://twitter.com/" id="logoTwitter"><img src="../ressources/images/Footer/SocialMediaTwitter.png"></a>
+            <a href="https://www.youtube.com/" id="logoYT"><img src="../ressources/images/Footer/SocialMediaYoutube.png"></a>
+        </div>
+        <script>
+            function popUp() {
+                document.getElementById("popUp").classList.toggle("visible");
+                setTimeout(function popUpHide() {
+                    document.getElementById("popUp").classList.remove("visible");
+                }, 5000);
+            }
+        </script>
+    </footer>
+</body>
+</html>
