@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="96x96" href="ressources/images/Favicon-96x96.png">
+    <title>Galway Arts Festival</title>
+</head>
+<body>
+    <header>
+        <img id="1" src="ressources/images/index/backgroundMain.jpg">
+        <img id="2" src="ressources/images/whatsInForMe/Background.jpg">
+        <img id="3" src="ressources/images/artists/Background.JPG">
+        <img id="4" src="ressources/images/foodDrinks/Background.jpg">
+        <img id="5" src="ressources/images/lineup/background.jpg">
+    </header>
+    <headerTransparent>
+        <div class="logo">
+            <a href="index.html"><img src="ressources/images/logo.png" /></a>
+        </div>
+        <div class="logoText">
+            <h1>Galway Arts Festival<h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <div class="dropdown">
+                    <li><a>ABOUT</a></li>
+                    <div class="dropdown-content">
+                        <a href="pages/about.html">About</a>
+                        <a href="pages/navigation.html">Navigation</a>
+                        <a href="pages/volunteer.html">Volunteer</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>LINEUP</a></li>
+                    <div class="dropdown-content">
+                        <a href="pages/lineup.html">LINEUP</a>
+                        <a href="pages/artists.html">Artists</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>ARTS</a></li>
+                    <div class="dropdown-content">
+                        <a href="pages/whatsInForMe.html">What's in<br />for me?</a>
+                        <a href="pages/music.html">Music</a>
+                        <a href="pages/visualArts.html">Visual Arts</a>
+                        <a href="pages/theatre.html">Theatre</a>
+                        <a href="pages/movies.html">Movies</a>
+                        <a href="pages/rareArts.html">Rare Arts</a>
+                        <a href="pages/comedy.html">Comedy</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li><a>EXPLORE</a></li>
+                    <div class="dropdown-content">
+                        <a href="pages/foodDrinks.html">Food &<br />Drinks</a>
+                        <a href="pages/placesActivities.html">Places &<br />Activities</a>
+                        <a href="pages/Accommodation.html">Accommodation</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </headerTransparent>
+    <text>
+        <p class="textLeft">The Galway Arts Festival is a four-day event that takes place in summer every year. This year it starts on the 11th and ends on the 14th of July. Though the festival takes place all over the city of Galway, most of the action will be centred in and around Eyre Square. The festival will feature some of the greatest names in art from all around the globe.</p>
+        <p class="textRight">Still it's you, the people, who are the heart of this four-day carnival. You'll be the audience, critique and in some cases the performers in the shows that will take place. This is also an extraordinary opportunity for cross-cultural experiences, as people from all around the world come to the GAF! Over 50 different artists from all genres will be in Galway to entertain you. We are waiting for YOU!</p>
+    </text>
+    <whatsInForMe>
+        <a class="upperRow" href="pages/whatsinforme.html">&mdash;EXPLORE MORE&mdash;</a>
+        <a class="lowerRow" href="pages/whatsinforme.html">WHAT'S IN FOR ME?</a>
+    </whatsInForMe>
+    <bubbles class="backgroundIndex">
+        <a href="pages/music.html"><img src="ressources/images/Index/Music.jpg" /></a>
+        <a href="pages/visualArts.html"><img src="ressources/images/Index/VisualArts.jpg" /></a>
+        <a href="pages/theatre.html"><img src="ressources/images/Index/Theatre.jpg" /></a>
+        <a href="pages/movies.html"><img src="ressources/images/Index/Movies.jpg" /></a>
+        <a href="pages/rareArts.html"><img src="ressources/images/Index/RareArts.jpg" /></a>
+        <a href="pages/comedy.html"><img src="ressources/images/Index/Comedy.jpg" /></a>
+        <a href="pages/foodDrinks.html"><img src="ressources/images/Index/FoodDrinks.jpg" /></a>
+        <a href="pages/lineup.html"><img src="ressources/images/Index/LineUp.jpg" /></a>
+    </bubbles>
+    <footer>
+        <div class="footerLeft">
+            <ul>
+                <li>Galway Arts Festival Administration Office</li>
+                <li>Black Box Theatre, Dyke Road, Galway, Ireland</li>
+            </ul>
+        </div>
+        <div class="footerMiddle">
+            <p>Supporters</p>
+            <div class="footerMiddleGrid">
+                <a href="http://www.nuigalway.ie/" id="supportNUI"><img src="ressources/images/Footer/SupportNUI.jpg"></a>
+                <a href="http://www.nuigalway.ie/commerce/" id="supportCairnes"><img src="ressources/images/Footer/SupportCairnes.PNG"></a>
+                <a href="https://www.guinness.com/" id="supportGuinness"><img src="ressources/images/Footer/SupportGuinness.jpg"></a>
+            </div>
+        </div>
+        <div class="footerRight">
+            <a href="https://www.facebook.com/" id="logoFB"><img src="ressources/images/Footer/SocialMediaFacebook.png"></a>
+            <a href="https://twitter.com/" id="logoTwitter"><img src="ressources/images/Footer/SocialMediaTwitter.png"></a>
+            <a href="https://www.youtube.com/" id="logoYT"><img src="ressources/images/Footer/SocialMediaYoutube.png"></a>
+        </div>
+        <script>
+            var slideIndex = 1;
+            show(slideIndex);
+            function show() {
+                 x = slideIndex;
+                 x += "";
+                 document.getElementById('1').style.display = "none";
+                 document.getElementById('2').style.display = "none";
+                 document.getElementById('3').style.display = "none";
+                 document.getElementById('4').style.display = "none";
+                 document.getElementById('5').style.display = "none";
+                 document.getElementById(x).style.display = "block";
+                 slideIndex++;
+                 if(slideIndex > 5) slideIndex = 1;
+                 setTimeout(function show2() {show(slideIndex);}, 3000);
+                }
+        </script>
+    </footer>
+</body>
+</html>
